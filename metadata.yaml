@@ -1,9 +1,9 @@
 name: astrbot_plugin_no_reply_filter
 display_name: NO_REPLY 拦截
-short_desc: 模型输出含 <<NO_REPLY>> 时拦截不发送
-desc: 当模型输出包含 <<NO_REPLY>> 时，拦截消息，不发送给用户
+short_desc: 模型输出含 <<NO_REPLY>> 时拦截不发送，并自动注入提示词
+desc: 当模型输出包含 <<NO_REPLY>> 时拦截消息不发送给用户；同时自动在 system prompt 中注入提示词，引导模型在无需回复时主动输出 <<NO_REPLY>>。
 author: hdhyhjfhjd
-version: "1.0"
+version: "1.1"
 repo: https://github.com/hdhyhjfhjd/astrbot_plugin_no_reply_filter
 license: MIT
 astrbot_version: ">=4.0.0"
